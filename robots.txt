@@ -1,0 +1,6 @@
+# Allow all robots complete access
+User-agent: *
+Disallow: 
+
+# Sitemap location
+Sitemap: https://ankit-khatik.web.app/sitemap.xml
