@@ -1,89 +1,1465 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Harry Li | Expert Full Stack Developer | Custom Web & PHP Laravel Development" />
+    <meta
+      name="description"
+      content="Harry Li, Full Stack Developer with 6+ years of experience, specializes in PHP, Laravel, Next.js, and scalable web applications. Custom web development solutions starting at $299." />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Web Developer, PHP Developer, Laravel Developer, Next.js Developer, SQL Developer, JavaScript Developer, Custom Web Development, API Development, Responsive Web Design, Frontend Developer, Backend Developer, Software Engineer, Web Application Development, Website Development, Harry Li, Harry Khoiwal, Royal Banna Harry, Full Stack Developer Portfolio, Web Development Services, Technology Solutions" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Harry Li" />
+    <meta name="publisher" content="Harry Li" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Harry Li - Full Stack Developer | PHP, Laravel, Next.js, Web Development" />
+    <meta
+      property="og:description"
+      content="Harry Li, an experienced full stack developer specializing in PHP, Laravel, Next.js, and SQL. Explore innovative web development projects and high-quality digital solutions for businesses. Contact Harry for full stack web development and software services." />
+    <meta property="og:image" content="og-image.png" />
+    <meta property="og:url" content="https://Harry-Li.web.app/" />
+    <meta
+      property="og:site_name"
+      content="Harry Li - Full Stack Developer | PHP, Laravel, Next.js, Web Development" />
+    <meta name="twitter:card" content="og-image.png" />
+    <meta
+      name="twitter:title"
+      content="Harry Li - Full Stack Developer | PHP, Laravel, Next.js, Web Development" />
+    <meta
+      name="twitter:description"
+      content="Harry Li, an experienced full stack developer specializing in PHP, Laravel, Next.js, and SQL. Explore innovative web development projects and high-quality digital solutions for businesses. Contact Harry for full stack web development and software services." />
+    <meta name="twitter:image" content="og-image.png" />
+    <meta name="twitter:site" content="@Harrykhoiwal" />
+    <meta name="twitter:creator" content="@Harrykhoiwal" />
+    <meta
+      name="google-site-verification"
+      content="-TFEaaD3aH9HImYtLrDxy_BZJy94upnlScCaDswIdAE" />
+    <link rel="canonical" href="https://Harry-Li.web.app/" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.3.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.3.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.3.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <title>Harry Li - Sr. Full Stack Developer | PHP, Laravel, Next.js, Web Development</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div
+        class="spinner-border text-secondary"
+        style="width: 3rem; height: 3rem"
+        role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- Spinner End -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s">
+      <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <span class="text-secondary fw-bold m-0">Harry</span>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between py-4 py-lg-0"
+        id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#skill" class="nav-item nav-link">Skills</a>
+          <a href="#service" class="nav-item nav-link">Services</a>
+        </div>
+        <!-- <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-secondary fw-bold m-0">ProMan</h1>
+            </a> -->
+        <div class="navbar-nav me-auto py-0">
+          <a href="#project" class="nav-item nav-link">Projects</a>
+          <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div
+      class="container-fluid bg-light my-6 mt-0 h-100 p-3"
+      style="min-height: 80vh"
+      id="home">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+            <h1 class="display-3 mb-3">Harry Li</h1>
+            <h2 class="typed-text-output d-inline"></h2>
+            <div class="typed-text d-none">
+              Senior Full Stack Developer, Senior PHP Developer, Senior Laravel Developer , Custom Web Developer, E-Commerce Developer, Senior Backend Developer, Software Engineer
+            </div>
+            <div class="d-flex align-items-center pt-5">
+              <a
+                href="img/Harry_Li_CV-2.pdf"
+                download="Harry_Li_CV-2.pdf"
+                class="btn btn-secondary py-3 px-4 me-5">Download CV</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="img/hero-image.webp"
+              alt="Harry Li - Sr. Full Stack Developer" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Video Modal Start -->
+    <div
+      class="modal modal-video fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- 16:9 aspect ratio -->
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="embed-responsive-item"
+                src
+                id="video"
+                allowfullscreen
+                allowscriptaccess="always"
+                allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="d-flex align-items-center mb-5">
+              <div class="years flex-shrink-0 text-center me-4">
+                <h2 class="display-1 mb-0">6</h2>
+                <h5 class="mb-0">Years</h5>
+              </div>
+              <h3 class="lh-base mb-0">
+                Experience in Full Stack Web Development
+              </h3>
+            </div>
+            <p class="mb-4">
+              My name is Harry Li (also known as Harry Khoiwal), a dedicated Sr.
+              Full Stack Developer with over six years of experience. I
+              specialize in PHP, Laravel, Next.js, and custom web solutions that
+              cater to diverse client needs. I am dedicated to creating web
+              applications that are both high-quality and scalable, whether they
+              are responsive or logic-based.
+            </p>
+            <p class="mb-4">
+              My focus as a developer is to develop end-to-end web applications
+              that ensure optimal performance, security, and user engagement.
+              From wireframe design to deployment, my services ensure a seamless
+              experience for both clients and users.
+            </p>
+            <p class="mb-3">
+              <i class="far fa-check-circle text-secondary me-3"></i>Affordable
+              Pricing
+            </p>
+            <p class="mb-3">
+              <i class="far fa-check-circle text-secondary me-3"></i>High-Quality
+              Deliverables
+            </p>
+            <p class="mb-3">
+              <i class="far fa-check-circle text-secondary me-3"></i>Timely
+              Project Delivery
+            </p>
+            <p class="mb-4">
+              My portfolio shows work in various industries, including custom
+              web development, e-commerce platforms, and SaaS applications.
+              Technologies I frequently use include PHP, Laravel, Next.js,
+              Node.js, Javascript, Jquery, SQL, AWS, and more.
+            </p>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <img
+                  class="img-fluid rounded"
+                  src="img/about-1.jpg"
+                  alt="Professional Web Development by Harry Li" />
+              </div>
+              <div class="col-sm-6">
+                <img
+                  class="img-fluid rounded"
+                  src="img/about-2.jpg"
+                  alt="Full Stack Development Expertise by Harry Khoiwal" />
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
+              <h2 class="text-secondary fw-bold mb-0" data-toggle="counter-up">
+                20
+              </h2>
+            </div>
+            <p class="mb-4">
+              My experience includes working with more than 20 clients in
+              different industries to create custom web applications and
+              software services that meet their business requirements. My
+              commitment is to providing client satisfaction and building
+              long-term relationships.
+            </p>
+            <div class="d-flex align-items-center mb-3">
+              <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+              <h2 class="text-secondary fw-bold mb-0" data-toggle="counter-up">
+                15
+              </h2>
+            </div>
+            <p class="mb-0">
+              From custom web applications to enterprise-level solutions, my
+              completed projects highlight my expertise in PHP, Laravel,
+              Next.js, and other leading technologies. Let’s work together to
+              bring your project to real life!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="display-5 mb-5">Skills & Experience</h2>
+            <p class="mb-4">
+              My name is Harry Li, and I have worked as a senior full stack
+              engineer for over six years. My skills in web and mobile
+              programming have evolved and I am proficient in a various
+              technologies, including SQL, PHP, Laravel, Node.js and Next.js.
+              Creating creative solutions that are tailored to every client's
+              specific demands is possible with my broad skill set.
+            </p>
+            <p class="mb-4">
+              My main goal is to develop powerful, dynamic, and user-friendly
+              online apps. Through the use of contemporary frameworks and
+              libraries like React, Vue.js, and Express.js, I am able to
+              efficiently address several facets of software development in my
+              job. Furthermore, responsive design—which guarantees an excellent
+              user experience across all devices—using HTML, CSS, Bootstrap, and
+              Tailwind is something I value highly.
+            </p>
+            <p class="mb-4">
+              In addition to my technical skills, I think that high standards
+              for code quality should be upheld. I follow industry best
+              practices and strive to finish projects on schedule. My commitment
+              to lifelong learning and remaining newest with industry
+              developments allows me to maintain my competitive edge in the
+              fast-paced tech business and provide creative solutions.
+            </p>
+            <p class="mb-4">
+              In my career, I have been involved in various projects, including
+              small apps and complex corporate systems. My capacity to solve
+              problems and adapt has improved as a result of this trip, making
+              me a dependable developer in the technology industry.
+            </p>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="my-4">
+              <ul
+                class="nav nav-pills rounded border border-2 border-secondary mb-5">
+                <li class="nav-item w-50">
+                  <button
+                    class="nav-link w-100 py-3 fs-5 active"
+                    data-bs-toggle="pill"
+                    href="#tab-1">
+                    Experience
+                  </button>
+                </li>
+                <li class="nav-item w-50">
+                  <button
+                    class="nav-link w-100 py-3 fs-5"
+                    data-bs-toggle="pill"
+                    href="#tab-2">
+                    Education
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                  <div class="row gy-5 gx-4">
+                    <div class="col-sm-6">
+                      <h5>Full Stack Developer</h5>
+                      <hr class="text-secondary my-2" />
+                      <p class="text-secondary mb-1">June 2018 - November 2021</p>
+                      <h6 class="mb-0">Qubit Labs</h6>
+                    </div>
+                    <div class="col-sm-6">
+                      <h5>Full Stack Developer</h5>
+                      <hr class="text-secondary my-2" />
+                      <p class="text-secondary mb-1">February 2022 - December 2024</p>
+                      <h6 class="mb-0">Rocking Tech</h6>
+                    </div>
+                    <div class="col-sm-6">
+                      <h5>Senior Full Stack Developer</h5>
+                      <hr class="text-secondary my-2" />
+                      <p class="text-secondary mb-1">January 2025 - Present</p>
+                      <h6 class="mb-0">Freelancer</h6>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade show p-0">
+                  <div class="row gy-5 gx-4">
+                    <div class="col-sm-6">
+                      <h5>University of Toronto</h5>
+                      <hr class="text-secondary my-2" />
+                      <p class="text-secondary mb-1">2013 - 2018</p>
+                      <h6 class="mb-0">Bachelor of Computer Science</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-4">
+              <h3 class="mb-4 my-5">My Skills</h3>
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">PHP</h6>
+                      <h6 class="font-weight-bold">95%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">SQL</h6>
+                      <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Laravel</h6>
+                      <h6 class="font-weight-bold">90%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">WordPress</h6>
+                      <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">JavaScript</h6>
+                      <h6 class="font-weight-bold">90%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Next.js</h6>
+                      <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-dark"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Java</h6>
+                      <h6 class="font-weight-bold">70%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Cloud Computing</h6>
+                      <h6 class="font-weight-bold">80%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Expertise End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+      <div class="container">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <h2 class="display-5 mb-0">My Web Development Services</h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a class="btn btn-secondary py-3 px-5" href="tel:+91 7878494207">Hire
+              Me</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-crop-alt fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">Custom Web Development</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$299</span>
+                </h6>
+                <span>Bring your ideal to life with bespoke web development
+                  services. I implement sophisticated technologies including
+                  PHP, Laravel, Next.js to offer custom built websites that are
+                  interactive and result driven.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-code-branch fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">Responsive Web Design</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$299</span>
+                </h6>
+                <span>Widen the scope of your enterprise with mobile friendly
+                  design. I design beautiful and functional websites that are
+                  compatible to all screen sizes for every user taking into
+                  consideration how the users are likely to browse.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-shopping-cart fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">E-Commerce Solutions</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$399</span>
+                </h6>
+                <span>Start your own web shop using fully-featured e commerce
+                  solutions. I create custom stores with safe payment gateways
+                  and interactive elements to help you to persuade customers and
+                  visitors to use your store online.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-laptop-code fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">UI/UX Design</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$299</span>
+                </h6>
+                <span>Make users happier with efficient UI & UX design services.
+                  I
+                  design functional, beautiful screens for your web applications
+                  that attract and retain users improving the overall usability
+                  of the applications.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-cloud fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">Cloud Solutions (AWS)</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$499</span>
+                </h6>
+                <span>Make use of the cloud through my AWS services. I help set
+                  up
+                  the architecture of the cloud, facilitate the movement of
+                  existing systems to the cloud and optimize them for
+                  performance, scalability, and security for your organization.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-search fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">SEO Optimization</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$199</span>
+                </h6>
+                <span>With my professional SEO services, you will be able to
+                  boost
+                  the visibility and ranking of your website. I apply focused
+                  techniques, such as keyword searching, on-page optimization
+                  and content creation, to ensure that traffic is organic to
+                  your site.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-comments fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">Consultation Services</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$150</span>
+                </h6>
+                <span>To help you with your software projects, I offer
+                  consulting
+                  services. I address the following topics: technology
+                  selection, project planning, performance optimization, and
+                  provide you with decision aids. Website Security
+                  Solutions</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+              <div class="bg-icon flex-shrink-0 mb-3">
+                <i class="fa fa-shield-alt fa-2x text-dark"></i>
+              </div>
+              <div class="ms-sm-4">
+                <h4 class="mb-3">Website Security Solutions</h4>
+                <h6 class="mb-3">
+                  Starting from <span class="text-secondary">$299</span>
+                </h6>
+                <span>Safeguard your digital identity by implementing
+                  all-inclusive
+                  website security solutions. My services are inclusive of
+                  vulnerability assessments and remediation, malware eradication
+                  as well as continuous monitoring of your site to fend off
+                  threats and keep your users safe while surfing the web.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+      <div class="container">
+        <div
+          class="row g-5 mb-5 align-items-center wow fadeInUp"
+          data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <h2 class="display-5 mb-0">My Projects</h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+              <li class="mx-3 active" data-filter="*">All Projects</li>
+              <li class="mx-3" data-filter=".first">Laravel</li>
+              <li class="mx-3" data-filter=".second">Next Js</li>
+              <li class="mx-3" data-filter=".third">Vue Js</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="row g-4 portfolio-container wow fadeInUp"
+          data-wow-delay="0.1s"
+          id="portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/gradding.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/burger-king.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/burger-king.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.burgerking.in/"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img
+                class="img-fluid"
+                src="img/gradding-laraveldashboard.png"
+                alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-laraveldashboard.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/dashboard/finder/course"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/mysiponline.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/mysiponline.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.mysiponline.com/"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/gradding-ielts.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-ielts.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/test-preparation/ielts"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/reventure.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/reventure.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://reventure.vercel.app/en"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/gradding-blog.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-blog.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/blog"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/gradding-pte.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-pte.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/test-preparation/pte"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img
+                class="img-fluid"
+                src="img/gradding-accommodation.png"
+                alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-accommodation.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/student-accommodation"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img
+                class="img-fluid"
+                src="img/gradding-consultancy.png"
+                alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-consultancy.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://www.gradding.com/study-abroad-consultants/"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="img/gradding-dashboard.png" alt />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="img/gradding-dashboard.png"
+                  data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://dashboard.gradding.com/dashboard"
+                  target="_blank"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add pagination buttons -->
+        <div class="d-flex justify-content-center mt-4">
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0);"
+                  id="prevPage">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0);"
+                  id="nextPage">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-6 pb-5" id="team">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Team Members</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-secondary py-3 px-5" href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
+                        <div class="team-text bg-white rounded-end p-4">
+                            <div>
+                                <h5>Full Name</h5>
+                                <span>Designer</span>
+                            </div>
+                            <i class="fa fa-arrow-right fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+      <div class="container-fluid py-5">
+        <h2
+          class="display-5 text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s">
+          What My Clients Say
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="testimonial-left h-100">
+              <img
+                class="img-fluid wow fadeIn"
+                data-wow-delay="0.1s"
+                src="img/testimonial-1.jpg"
+                alt="Client Review" />
+              <img
+                class="img-fluid wow fadeIn"
+                data-wow-delay="0.3s"
+                src="img/testimonial-2.jpg"
+                alt="Client Feedback" />
+              <img
+                class="img-fluid wow fadeIn"
+                data-wow-delay="0.5s"
+                src="img/testimonial-3.jpg"
+                alt="Customer Review" />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item text-center">
+                <div class="position-relative mb-5">
+                  <img
+                    class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                    src="img/testimonial-1.jpg"
+                    alt="John Doe" />
+                  <div class="testimonial-icon">
+                    <i class="fa fa-quote-left text-secondary"></i>
+                  </div>
+                </div>
+                <p class="fs-5 fst-italic">
+                  “Working with Harry has been a remarkable experience. His
+                  ability to understand client needs and deliver exceptional
+                  results has made a significant difference in our project
+                  outcomes. We are grateful for his expertise!”
+                </p>
+                <hr class="w-25 mx-auto" />
+                <h5>Rakul Preet</h5>
+                <span>CEO, Tech Solutions</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <div class="position-relative mb-5">
+                  <img
+                    class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                    src="img/testimonial-2.jpg"
+                    alt="Jane Smith" />
+                  <div class="testimonial-icon">
+                    <i class="fa fa-quote-left text-secondary"></i>
+                  </div>
+                </div>
+                <p class="fs-5 fst-italic">
+                  “Harry’s professionalism and skill set are truly commendable.
+                  The final product was not only visually attractive but also
+                  highly functional. I would highly recommend his services to
+                  anyone looking for quality web solutions.”
+                </p>
+                <hr class="w-25 mx-auto" />
+                <h5>Jane Smith</h5>
+                <span>Marketing Manager, Creative Agency</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <div class="position-relative mb-5">
+                  <img
+                    class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                    src="img/testimonial-3.jpg"
+                    alt="Michael Johnson" />
+                  <div class="testimonial-icon">
+                    <i class="fa fa-quote-left text-secondary"></i>
+                  </div>
+                </div>
+                <p class="fs-5 fst-italic">
+                  “Harry was instrumental in developing our website. His
+                  attention to detail and commitment to meeting deadlines made
+                  the project a success. We are extremely satisfied with the end
+                  results and would recommend him without hesitation!”
+                </p>
+                <hr class="w-25 mx-auto" />
+                <h5>Michael Johnson</h5>
+                <span>Founder, Innovate Labs</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="testimonial-right h-100">
+              <img
+                class="img-fluid wow fadeIn"
+                data-wow-delay="0.1s"
+                src="img/testimonial-1.jpg"
+                alt="Client Review" />
+              <img
+                class="img-fluid wow fadeIn"
+                data-wow-delay="0.3s"
+                src="img/testimonial-2.jpg"
+                alt="Client Feedback" />
+              <img
+                class="img-fluid wow fadeIn"
+                data-wow-delay="0.5s"
+                src="img/testimonial-3.jpg"
+                alt="Customer Review" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+      <div class="container py-5">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <h2 class="display-5 mb-0">Let's Work Together</h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a class="btn btn-secondary py-3 px-5" href="tel:+91 7878494207">Say
+              Hello</a>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <hr class="w-100" />
+            <p class="mb-2">Call me on Telegram:</p>
+            <h3 class="fw-bold">
+              <a class="text-dark" href="tel:@kocnaroto93">@kocnaruto93</a>
+            </h3>
+            <hr class="w-100" />
+            <p class="mb-2">Mail me:</p>
+            <h3 class="fw-bold">
+              <a class="text-dark"
+                href="mailto:bellh0196@gmail.com">bellh0196@gmail.com</a>
+            </h3>
+            <hr class="w-100" />
+            <p class="mb-2">Follow me:</p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-secondary me-2"
+                target="_blank"
+                href="https://x.com/harry_li_"><i
+                  class="fab fa-twitter"></i></a>
+              <a
+                class="btn btn-square btn-secondary me-2"
+                target="_blank"
+                href="https://www.instagram.com/royal_banna_Harry/"><i
+                  class="fab fa-instagram"></i></a>
+              <a
+                class="btn btn-square btn-secondary me-2"
+                target="_blank"
+                href="https://www.facebook.com/Harry.khoiwal.927"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a
+                class="btn btn-square btn-secondary me-2"
+                target="_blank"
+                href="https://www.youtube.com/@dranzergaming593"><i
+                  class="fab fa-youtube"></i></a>
+              <a
+                class="btn btn-square btn-secondary me-2"
+                target="_blank"
+                href="https://www.linkedin.com/in/Harry-khoiwal-645263260"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a
+                class="btn btn-square btn-secondary me-2"
+                target="_blank"
+                href="https://github.com/alpha-coder23"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name" />
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email" />
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject" />
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a message here"
+                      id="message"
+                      style="height: 100px"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    class="btn btn-secondary py-3 px-5"
+                    type="submit"
+                    id="showToastBtn">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="toast-container" class="toast-container"></div>
+    <!-- Contact End -->
+
+    <!-- Map Start -->
+    <!-- <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl pt-5 px-0">
+            <div class="bg-dark">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+        </div>
+    </div> -->
+    <!-- Map End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy;
+            <a
+              class="border-bottom text-secondary"
+              href="https://Harry-Li.web.app/">Harry Li</a>
+            | All Rights Reserved.
+            <br />
+            Empowering your digital journey since 2020.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Designed and Developed by
+            <a
+              class="border-bottom text-secondary"
+              href="https://Harry-Li.web.app/">Harry Li</a>
+            <br />
+            Pioneering innovative web solutions for modern businesses.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i
+        class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Harry Li",
+        "url": "https://Harry-Li.web.app",
+        "logo": "https://Harry-Li.web.app/img/favicon.ico",
+        "sameAs": [
+          "https://www.linkedin.com/in/Harry-khoiwal-645263260",
+          "https://x.com/Harry_Ri_",
+          "https://www.facebook.com/Harry.Ri.1003",
+          "https://www.instagram.com/royal_banna_Harry"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kronto, Canada,
+          "addressRegion": "Canada",
+          "postalCode": "313001",
+          "addressCountry": "Canada"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+46 7878494207",
+          "contactType": "Customer Service",
+          "areaServed": "IN",
+          "availableLanguage": "English"
         }
-      });
+      }
+    </script>
+
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Harry Li",
+        "url": "https://Harry-Li.web.app",
+        "image": "https://Harry-Li.web.app/img/favicon.ico",
+        "jobTitle": "Sr. Web Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Harry Li"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/Harry-khoiwal-645263260",
+          "https://x.com/harry_li_",
+          "https://www.facebook.com/Harry.khoiwal.927",
+          "https://www.instagram.com/royal_banna_Harry"
+        ],
+        "description": "Harry Li is a professional web developer specializing in PHP, Laravel, and cloud solutions. Committed to delivering high-quality digital experiences.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Udaipur, Rajasthan",
+          "addressRegion": "canada",
+          "postalCode": "313001",
+          "addressCountry": "canada"
+        },
+        "telephone": "+91 7878494207",
+        "email": "mailto:Harrykhoiwal3@gmail.com"
+      }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Harry Li - Sr. Full Stack Developer | PHP, Laravel, Next.js, Web Development",
+        "url": "https://Harry-Li.web.app",
+        "description": "Explore the portfolio of Harry Li, a skilled web developer specializing in modern web solutions, e-commerce, and cloud technologies.",
+        "author": {
+          "@type": "Person",
+          "name": "Harry Li"
+        },
+        "mainEntityOfPage": "True"
+      }
+    </script>
+
+    <!-- Offer Schema -->
+    <!-- <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Web Development",
+        "provider": {
+          "@type": "Organization",
+          "name": "Harry Li",
+          "url": "https://Harry-Li.web.app",
+          "logo": "https://Harry-Li.web.app/img/favicon.ico",
+          "sameAs": [
+            "https://www.linkedin.com/in/Harry-khoiwal-645263260",
+            "https://x.com/harry_li_",
+            "https://www.facebook.com/Harry.khoiwal.927",
+            "https://www.instagram.com/royal_banna_Harry"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91 7878494207",
+            "contactType": "Customer Service",
+            "areaServed": "Worldwide",
+            "availableLanguage": "English"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "299.00",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Custom Web Development",
+            "description": "Tailor-made web development solutions utilizing cutting-edge technologies such as PHP, Laravel, and Next.js to ensure high performance and seamless user experiences.",
+            "image": "https://Harry-Li.web.app/img/favicon.ico",
+            "brand": {
+              "@type": "Brand",
+              "name": "Harry Li Web Solutions"
+            }
+          },
+          "eligibleRegion": {
+            "@type": "Place",
+            "name": "Worldwide"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        "review": {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Rakul Preet",
+            "image": "https://Harry-Li.web.app/img/testimonial-1.jpg"
+          },
+          "datePublished": "2024-10-01",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "description": "Harry’s web development skills are exceptional. He transformed our vision into a fully functional, modern website that significantly improved our online presence."
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "50"
+        }
+      }
+    </script> -->
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://Harry-Li.web.app",
+              "name": "Home"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <script defer>
+      let isAnalyticsLoaded = false;
+  
+      function loadAnalyticsScript() {
+        if (!isAnalyticsLoaded) {
+          setTimeout(() => {
+
+            const script = document.createElement('script');
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-QV4J9G2TBX";
+            script.async = true;
+            document.head.appendChild(script);
+  
+            const inlineScript = document.createElement('script');
+            inlineScript.innerHTML = `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QV4J9G2TBX');
+            `;
+            document.head.appendChild(inlineScript);
+  
+            isAnalyticsLoaded = true;
+            console.log('Google Analytics script loaded');
+          }, 500);
+        }
+      }
+  
+      window.addEventListener('scroll', loadAnalyticsScript, { once: true });
+      window.addEventListener('click', loadAnalyticsScript, { once: true });
+      window.addEventListener('touchstart', loadAnalyticsScript, { once: true });
     </script>
   </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyATqycKZZKxr0TmJA2BQ9wO_KvrW9on0k4",
+      authDomain: "harryliportfolio-f8d84.firebaseapp.com",
+      projectId: "harryliportfolio-f8d84",
+      storageBucket: "harryliportfolio-f8d84.firebasestorage.app",
+      messagingSenderId: "904794634544",
+      appId: "1:904794634544:web:bea17e6c7b0804087070f5",
+      measurementId: "G-5W45MWBS0L"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>

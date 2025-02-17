@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #eec50d;
+  --secondary: #c5a344;
   --secondary: #ffc448;
   --light: #fafafb;
   --dark: #12141d;
@@ -44,7 +44,7 @@
   transition: 0.5s;
 }
 
-.btn.btn-primary,
+.btn.btn-secondary,
 .btn.btn-secondary {
   color: #ffffff;
 }
@@ -82,7 +82,7 @@
 
 .navbar .navbar-nav .nav-link {
   padding: 20px 15px;
-  color: var(--dark);
+  color: var(--secondary);
   font-size: 18px;
   font-weight: 600;
   outline: none;
@@ -90,7 +90,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 @media (max-width: 991.98px) {
@@ -102,7 +102,7 @@
 /*** Header ***/
 #home {
   margin-bottom: 6rem;
-  background: url(../img/bg-header.webp) left top no-repeat;
+  background: url(../img/bg-header.png) left top no-repeat;
 }
 
 .typed-cursor {
@@ -120,7 +120,7 @@
   border: none;
   outline: none !important;
   padding: 18px 20px 20px 28px;
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 .btn-play:before {
@@ -133,7 +133,7 @@
   display: block;
   width: 60px;
   height: 60px;
-  background: var(--primary);
+  background: var(--secondary);
   border-radius: 100%;
   animation: pulse-border 1500ms ease-out infinite;
 }
@@ -160,7 +160,7 @@
   width: 0;
   height: 0;
   left: -1px;
-  border-left: 16px solid var(--primary);
+  border-left: 16px solid var(--secondary);
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
 }
@@ -260,8 +260,8 @@
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-  color: var(--primary);
-  border-color: var(--primary);
+  color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .portfolio-img {
@@ -274,7 +274,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(233, 159, 22, 0.9);
+  background: rgba(240, 190, 25, 0.9);
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -416,7 +416,7 @@
 }
 
 .testimonial-carousel .owl-dot.active::after {
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 /* Toast Container */
