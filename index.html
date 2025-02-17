@@ -1439,4 +1439,27 @@
       window.addEventListener('touchstart', loadAnalyticsScript, { once: true });
     </script>
   </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyATqycKZZKxr0TmJA2BQ9wO_KvrW9on0k4",
+      authDomain: "harryliportfolio-f8d84.firebaseapp.com",
+      projectId: "harryliportfolio-f8d84",
+      storageBucket: "harryliportfolio-f8d84.firebasestorage.app",
+      messagingSenderId: "904794634544",
+      appId: "1:904794634544:web:bea17e6c7b0804087070f5",
+      measurementId: "G-5W45MWBS0L"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>
