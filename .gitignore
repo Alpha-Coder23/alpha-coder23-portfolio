@@ -8,9 +8,9 @@ firebase-debug.log*
 firebase-debug.*.log*
 
 # Firebase cache
-.firebase/
-.firebaserc
-firebase.json
+# .firebase/
+# .firebaserc
+# firebase.json
 
 # Firebase config
 
